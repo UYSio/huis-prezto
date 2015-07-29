@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [[ -x /bin/zsh ]]; then
+  chsh -s /bin/zsh
+else
+  brew install zsh
+  chsh -s /usr/local/bin/zsh
+fi
