@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
-sudo apt-get install -y zsh
-chsh -s /bin/zsh
+
+# TODO add Arch. I started with ZSH on Arch, so meh...
+
+if grep -q "Ubuntu" /etc/issue ; then
+  sudo apt-get install -y zsh
+  chsh -s /bin/zsh
+fi
